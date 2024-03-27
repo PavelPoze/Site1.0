@@ -1,0 +1,596 @@
+body {
+    margin: 0;
+    /* уберает отпступы экрана*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    margin: 0px 166px;
+    /*отступ сверху и снизу 0, справа и слева 166*/
+
+}
+
+header {
+    background-image: url(/Cafe/images/heroimage.png);
+    height: 100vh;
+    /* заполняет картинку на весь экран*/
+    background-repeat: no-repeat;
+    /* запрещает повторение картинки*/
+    background-size: cover;
+    /* заполняется карнитка на весь экран */
+}
+
+.header-line {
+    padding-top: 50px;
+    /*задал внутренний отступ сверху */
+    display: flex;
+    /* выставил элементы в т=строку */
+    align-items: center;
+    /* выравнил элементы по горизонтали */
+    justify-content: space-around;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 25px;
+    transition: color 0.3s linear;
+    /*включает плавность изменения цвета*/
+
+}
+
+.nav-item:hover {
+    /* изменения по наведению */
+    color: red;
+}
+
+.cart {
+    position: relative;
+    /* задал позицию для родительского элемента */
+    border-right: 1px solid #FFF;
+    padding-right: 10px;
+    height: 50px;
+}
+
+.cart-img {
+    position: absolute;
+    /*задал положение независимое*/
+    top: 18px;
+    right: 15px;
+}
+
+.num {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    transition: color 0.3s linear;
+}
+
+.num:hover {
+    color: red;
+}
+
+.phone-text {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.phone-holder {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    background-color: #FF7400;
+    color: #FFF;
+    text-decoration: none;
+    padding: 14px 18px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background-color 0.3s linear;
+}
+
+.button:hover {
+    background-color: #853c00;
+}
+
+
+.header-down {
+    position: relative;
+
+}
+
+.header-title {
+    color: #D67E35;
+    font-family: Tinos;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    position: absolute;
+    margin-top: 222px;
+    left: 0;
+
+}
+
+.header-subtitle {
+    height: 85px;
+    color: #D67E35;
+    font-family: Tinos;
+    font-size: 80px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.header-suptitle {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-suptitle:after {
+    /*создаёт полоски сбоку от текста*/
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 61px;
+    background-color: white;
+    top: 168px;
+    left: 56px;
+
+}
+
+.header-suptitle::before {
+    /*создаёт полоски сбоку от текста*/
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 61px;
+    background-color: white;
+    top: 168px;
+    left: 350px;
+
+}
+
+.header-button {
+    background-color: #FF7400;
+    padding: 14px 28px;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background-color 0.3s linear;
+}
+
+.header-button:hover {
+    background-color: red;
+
+}
+
+.cards {
+    display: flex;
+
+}
+
+.card {
+    background-color: #D67E35;
+    width: 376px;
+    background: #FFF;
+    box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.10);
+    margin-top: -30px;
+    margin-right: 31px;
+    padding: 0 21px;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    padding-top: 31px;
+}
+
+.card-title {
+    color: #656363;
+    text-align: center;
+    font-family: Tinos;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.card-discrip {
+    text-align: center;
+    color: #656363;
+    text-align: center;
+    font-family: Tinos;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 54px;
+}
+
+.card-title span {
+    color: #FF7400;
+}
+
+.history {
+    margin-right: 66px;
+    margin-top: 166px;
+    padding-bottom: 150px;
+}
+
+.history-title {
+    color: #000;
+    font-family: Tinos;
+    font-size: 54px;
+    font-weight: 400;
+    width: 444px;
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+.history-title span {
+    color: #FF7400;
+}
+
+.history-disc {
+    color: #656363;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: 444px;
+}
+
+.history-num {
+    display: flex;
+    width: 444px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 30px;
+
+}
+
+.histiry-num-item {
+    margin-right: 60px;
+    color: #BC9060;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.histiry-num-item span {
+    display: block;
+    /* так обертка будет распологаться ниже */
+    color: #000;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.history-liner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.history-imges {
+    margin-top: 60px;
+}
+
+.offer {
+    background-image: url(/Cafe/images/bg.png);
+    background-size: cover;
+
+
+}
+
+.offer-info {
+    width: 601px;
+}
+
+.offer-info-title {
+    color: #D67E34;
+    font-family: Tinos;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.offer-info-text {
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.offer-ntn {
+    background: #FF7400;
+    padding: 14px 19px;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s linear;
+}
+
+.offer-ntn:hover {
+    background-color: #853c00;
+}
+
+.block-black {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.dishes-title {
+    color: #000;
+    font-family: Tinos;
+    font-size: 54px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 132px;
+}
+
+.dishes-title span {
+    color: #D67E34;
+}
+
+.burgers {
+    display: flex;
+    justify-content: center;
+    margin-top: 132px;
+}
+
+.burger-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.buger-text {
+    color: #000;
+    font-family: Tinos;
+    font-size: 26px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.burger-img {
+    margin-right: 12px;
+}
+
+.our-menu {
+    background-image: url(/Cafe/images/Mas.png);
+    background-size: cover;
+    height: 1034px;
+}
+
+.our-menu-title {
+    color: #FFF;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    font-family: Tinos;
+    font-size: 54px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.menu-item {
+    background: #FFF;
+    text-align: center;
+    width: 33%;
+    padding-bottom: 29px;
+    margin-right: 30px;
+}
+
+.menu-title {
+    color: #000;
+    font-family: Tinos;
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+.menu-img {
+    width: 231px;
+    height: 231px;
+    padding-top: 80px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.img-price {
+    position: absolute;
+    top: 205px;
+    left: 144px;
+}
+
+.menu-btn {
+    background: #D67E34;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    width: 220px;
+    padding: 14px 0;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+.menu-disc {
+    color: #000;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 17px;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    margin-top: 138px;
+}
+
+.price-text {
+    position: absolute;
+    bottom: 41px;
+    right: 17px;
+    color: #FFF;
+    font-family: Cookie;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.fitback {
+    background-color: #E5E5E5;
+    padding-top: 104px;
+    text-align: center;
+    padding-bottom: 139px;
+}
+
+.fitback-text {
+    width: 920px;
+    color: #000;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.fitback-img {
+    margin-top: 17px;
+    border-radius: 60px;
+}
+
+.fitback-type {
+    margin-top: 17px;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.fitback-name {
+    color: #000;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.gallery {
+    text-align: center;
+    padding-top: 101px;
+}
+
+.gallery-title {
+    color: #000;
+    font-family: Tinos;
+    font-size: 54px;
+    font-weight: 400;
+}
+
+.gallery-title span {
+    color: #D67E34;
+    font-family: Tinos;
+    font-size: 54px;
+    font-weight: 400;
+}
+
+.gallery-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1123px;
+    margin-top: 60px;
+}
+
+.gallery-down {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.gallery-up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.povar {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.povar-img {
+    display: flex;
+    align-items: center;
+    width: 1123px;
+    justify-content: space-between;
+    margin-top: 107px;
+}
+
+.povar-title {
+    color: #000;
+    font-family: Tinos;
+    font-size: 54px;
+    font-weight: 400;
+}
+
+.povar-title span {
+    color: #D67E34;
+    font-family: Tinos;
+    font-size: 54px;
+    font-weight: 400;
+}
+
+footer {
+    background-image: url(/Cafe/images/MAKE_A_RESERVATION.png);
+    background-size: cover;
+
+}
+
+.footer {
+    text-align: center;
+    color: #FFF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+    .gallery-content {
+        display: block;
+        /* чтобы картинки были в столбик*/
+    }
+
+    .gal-img,
+    .gallery-down,
+    .gallery-up {
+        display: block;
+        margin: 0 auto;
+
+    }
+
+    .gal-img {
+        margin-bottom: 20px;
+
+    }
+
+}
